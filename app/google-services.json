@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "556785061354",
+    "project_id": "irmaojorel-1d2c7",
+    "storage_bucket": "irmaojorel-1d2c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556785061354:android:6b3eb9d17d8479aee7b693",
+        "android_client_info": {
+          "package_name": "br.com.irmaodojoreliesb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556785061354-8h26ttktcacrpoqurell994b1jljepgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCsbMdwhc9cZUd4JwLhglxJ5olFR4P85M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556785061354-8h26ttktcacrpoqurell994b1jljepgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

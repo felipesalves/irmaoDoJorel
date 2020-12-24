@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fluxo"
+    app:startDestination="@id/login2">
+
+    <fragment
+        android:id="@+id/recuperarSenha"
+        android:name="br.com.irmaodojoreliesb.view.fragment.RecuperarSenhaFragment"
+        android:label="fragment_recuperar_senha"
+        tools:layout="@layout/fragment_recuperar_senha" >
+        <action
+            android:id="@+id/action_recuperarSenha_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/listagem"
+        android:name="br.com.irmaodojoreliesb.view.fragment.ListagemFragment"
+        android:label="fragment_listagem"
+        tools:layout="@layout/fragment_listagem" >
+        <action
+            android:id="@+id/action_listagem_to_detalheFragment"
+            app:destination="@id/detalheFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="br.com.irmaodojoreliesb.view.fragment.LoginFragment"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login2_to_recuperarSenha"
+            app:destination="@id/recuperarSenha" />
+        <action
+            android:id="@+id/action_login2_to_listagem"
+            app:destination="@id/listagem" />
+        <action
+            android:id="@+id/action_login2_to_criarConta"
+            app:destination="@id/criarConta" />
+    </fragment>
+    <fragment
+        android:id="@+id/criarConta"
+        android:name="br.com.irmaodojoreliesb.view.fragment.CriarContaFragment"
+        android:label="fragment_criar_conta"
+        tools:layout="@layout/fragment_criar_conta" >
+        <action
+            android:id="@+id/action_criarConta_to_login2"
+            app:destination="@id/login2" />
+        <action
+            android:id="@+id/action_criarConta_to_listagem"
+            app:destination="@id/listagem" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="br.com.irmaodojoreliesb.view.fragment.DetalheFragment"
+        android:label="DetalheFragment" />
+</navigation>

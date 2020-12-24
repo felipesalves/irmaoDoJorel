@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">IrmaoDoJorelIesb</string>
+    <string name="email_obrigatorio">O e-mail é obrigatorio</string>
+    <string name="senha_obrigatorio">A senha é obrigatorio</string>
+    <string name="senha_6_menor">A senha deve ser maior que 6 caracteres</string>
+    <string name="login_error">Error ao acessar o sistema</string>
+    <string name="senha_Confirmar_nao_confere">Confirmar senha não confere com senha anterior</string>
+    <string name="senha_confirmar_obrigatorio">Confirmar a senha é obrigatorio</string>
+    <string name="esqueceu_senha">Redefinição de senha enviada para o e-mail</string>
+    <string name="emial_nao_confere">E-mail não cadastrado</string>
+
+    <string name="nome_titulo">Nome:</string>
+    <string name="categoria_titulo">Categoria:</string>
+    <string name="idade_titulo">Idade:</string>
+    <string name="descricao_titulo">Descrição:</string>
+    <string name="frase_titulo">Frase:</string>
+    <string name="biografia_titulo">Biografia:</string>
+    <string name="aparencia_titulo">Aparência:</string>
+    <string name="personalidade_titulo">Personalidade:</string>
+    <string name="idade_vazia">Sem Valor</string>
+
+
+
+    <!-- texto hint-->
+    <string name="email_hint">E-mail</string>
+    <string name="senha_hint">Senha</string>
+    <string name="senha_repetir_hint">Confirmar Senha</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
