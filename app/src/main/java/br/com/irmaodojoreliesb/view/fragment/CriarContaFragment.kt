@@ -28,6 +28,8 @@ class CriarContaFragment : Fragment() {
     ): View? {
         binding = FragmentCriarContaBinding.inflate(inflater, container, false)
         binding.lifecycleOwner = this
+        binding.fragment = this
+        binding.viewModel = viewModel
         return binding.root
     }
 
@@ -59,10 +61,6 @@ class CriarContaFragment : Fragment() {
             return
         }
 
-        //sucesso
-        //val intentListagem = Intent(this, HomeActivity::class.java)
-        //startActivity(intentHome)
-        //finish()
         findNavController().navigate(R.id.action_criarConta_to_listagem)
     }
 

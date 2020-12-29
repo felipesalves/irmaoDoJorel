@@ -29,7 +29,8 @@ class LoginFragment : Fragment() {
     ): View? {
 
         binding = FragmentLoginBinding.inflate(inflater, container, false)
-        //binding.fragment = this
+        binding.fragment = this
+        binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
         return binding.root
@@ -41,7 +42,6 @@ class LoginFragment : Fragment() {
         btLogin.setOnClickListener { login() }
         tvCadastrar.setOnClickListener { registrarConta() }
         tvForgoteSenha.setOnClickListener { esquecerSenha() }
-
 
         //escuta se ouve alteração na variavel resultadoParaTela
         viewModel.retornoLogin.observe(viewLifecycleOwner) { resultado ->
@@ -55,10 +55,6 @@ class LoginFragment : Fragment() {
             return
         }
 
-        //sucesso
-        //val intentListagem = Intent(this, HomeActivity::class.java)
-        //startActivity(intentHome)
-        //finish()
         findNavController().navigate(R.id.action_login2_to_listagem)
     }
 

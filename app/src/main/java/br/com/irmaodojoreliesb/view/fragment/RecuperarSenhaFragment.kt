@@ -29,7 +29,8 @@ class RecuperarSenhaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentRecuperarSenhaBinding.inflate(inflater, container, false)
-        //binding.fragment = this
+        binding.fragment = this
+        binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
         return binding.root

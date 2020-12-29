@@ -8,6 +8,10 @@
             name="fragment"
             type="br.com.irmaodojoreliesb.view.fragment.ListagemFragment" />
 
+        <variable
+            name="viewModel"
+            type="br.com.irmaodojoreliesb.view.viewModel.PersonagemViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

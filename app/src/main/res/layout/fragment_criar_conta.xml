@@ -4,6 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+    <data>
+
+        <variable
+            name="fragment"
+            type="br.com.irmaodojoreliesb.view.fragment.CriarContaFragment" />
+
+        <variable
+            name="viewModel"
+            type="br.com.irmaodojoreliesb.view.viewModel.LoginViewModel" />
+
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/criarConta"
         android:layout_width="match_parent"

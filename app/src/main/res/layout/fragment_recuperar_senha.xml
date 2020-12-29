@@ -4,6 +4,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
+    <data>
+
+        <variable
+            name="fragment"
+            type="br.com.irmaodojoreliesb.view.fragment.RecuperarSenhaFragment" />
+
+        <variable
+            name="viewModel"
+            type="br.com.irmaodojoreliesb.view.viewModel.LoginViewModel" />
+
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/esqueceuSenha"
         android:layout_width="match_parent"

@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,7 +21,9 @@ import br.com.irmaodojoreliesb.view.viewModel.PersonagemViewModel
 class ListagemFragment : Fragment() {
 
     private lateinit var binding: FragmentListagemBinding
-    private val viewModel: PersonagemViewModel by viewModels()
+    private val viewModel: PersonagemViewModel by lazy {
+        ViewModelProvider(this).get(PersonagemViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,6 +33,7 @@ class ListagemFragment : Fragment() {
 
         binding = FragmentListagemBinding.inflate(inflater, container, false)
         binding.fragment = this
+        binding.viewModel = viewModel
         binding.lifecycleOwner = this
 
         return binding.root
